@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -g -Map=frdm_im920c_gaweway.map -Os --gc-sections --specs=nano.specs -u _printf_float -u _scanf_float E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/board.o E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/cmsis_nvic.o E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/mbed_overrides.o E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/startup_MKL25Z4.o E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/system_MKL25Z4.o -LE:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM -LE:/CoIdeWork/GIT/TrapChecker/frdm_im920c_gaweway_coide_kl25z/frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM -TE:/CoIdeWork/GIT/TrapChecker/frdm_im920c_gaweway_coide_kl25z/frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/MKL25Z4.ld -g -L..\..\.. -lmbed -L..\..\.. -lstdc++ -L..\..\.. -lsupc++ -L..\..\.. -lm -L..\..\.. -lgcc -L..\..\.. -lc -L..\..\.. -lnosys">
+      <target file="frdm_im920c_gaweway.elf" lastModified="1570422de30">
+         <source file="..\obj\main.o" lastModified="1570422dbef"/>
+      </target>
+   </processor>
+</history>

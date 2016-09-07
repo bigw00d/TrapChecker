@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.5" name="frdm_im920c_gaweway">
+  <Target name="frdm_im920c_gaweway" isCurrent="1">
+    <Device manufacturerId="4" manufacturerName="Freescale" chipId="86" chipName="MKL25Z128VLK4" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="4"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value="-fno-common; -fmessage-length=0; -Wall; -fno-strict-aliasing; -fno-rtti; -fno-exceptions; -ffunction-sections; -fdata-sections; -std=gnu++98"/>
+        <Includepaths>
+          <Includepath path="."/>
+          <Includepath path="mbed"/>
+          <Includepath path="mbed/TARGET_KL25Z"/>
+          <Includepath path="mbed/TARGET_KL25Z/TARGET_Freescale"/>
+          <Includepath path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX"/>
+          <Includepath path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z"/>
+          <Includepath path="mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM"/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="TARGET_KL25Z"/>
+          <Define name="__MBED__=1"/>
+          <Define name="DEVICE_I2CSLAVE=1"/>
+          <Define name="TARGET_LIKE_MBED"/>
+          <Define name="TARGET_Freescale"/>
+          <Define name="DEVICE_PORTINOUT=1"/>
+          <Define name="__MBED_CMSIS_RTOS_CM"/>
+          <Define name="TOOLCHAIN_object"/>
+          <Define name="__CMSIS_RTOS"/>
+          <Define name="TARGET_KLXX"/>
+          <Define name="TARGET_CORTEX_M"/>
+          <Define name="TARGET_M0P"/>
+          <Define name="DEVICE_ANALOGOUT=1"/>
+          <Define name="TARGET_UVISOR_UNSUPPORTED"/>
+          <Define name="DEVICE_PWMOUT=1"/>
+          <Define name="DEVICE_INTERRUPTIN=1"/>
+          <Define name="DEVICE_I2C=1"/>
+          <Define name="DEVICE_PORTOUT=1"/>
+          <Define name="__CORTEX_M0PLUS"/>
+          <Define name="DEVICE_STDIO_MESSAGES=1"/>
+          <Define name="TARGET_FF_ARDUINO"/>
+          <Define name="TARGET_RELEASE"/>
+          <Define name="TOOLCHAIN_GCC"/>
+          <Define name="ARM_MATH_CM0PLUS"/>
+          <Define name="DEVICE_PORTIN=1"/>
+          <Define name="DEVICE_SLEEP=1"/>
+          <Define name="TOOLCHAIN_GCC_ARM"/>
+          <Define name="DEVICE_SPI=1"/>
+          <Define name="DEVICE_ERROR_RED=1"/>
+          <Define name="DEVICE_SPISLAVE=1"/>
+          <Define name="DEVICE_ANALOGIN=1"/>
+          <Define name="DEVICE_SERIAL=1"/>
+          <Define name="DEVICE_SEMIHOST=1"/>
+          <Define name="TARGET_LIKE_CORTEX_M0"/>
+          <Define name="MBED_BUILD_TIMESTAMP=1473242662.92"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="0"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Not use C Library"/>
+        <Option name="nostartfiles" value="0"/>
+        <Option name="UserEditLinker" value="--specs=nano.specs; -u _printf_float; -u _scanf_float;          ${project.path}/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/board.o;          ${project.path}/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/cmsis_nvic.o;          ${project.path}/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/mbed_overrides.o;          ${project.path}/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o;          ${project.path}/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/startup_MKL25Z4.o;          ${project.path}/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/system_MKL25Z4.o;  -L${project.path}/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM; "/>
+        <LinkedLibraries>
+          <Libset dir="" libs="mbed"/>
+          <Libset dir="" libs="stdc++"/>
+          <Libset dir="" libs="supc++"/>
+          <Libset dir="" libs="m"/>
+          <Libset dir="" libs="gcc"/>
+          <Libset dir="" libs="c"/>
+          <Libset dir="" libs="nosys"/>
+        </LinkedLibraries>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00020000" startValue="0x00000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00001000" startValue="0x1FFFF000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/MKL25Z4.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="frdm_im920c_gaweway"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="CMSIS-DAP"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="KLxx_128_PRG_NO_CFG.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./"/>
+  <Files>
+    <File name="headers/mbed/TARGET_KL25Z/core_cm4.h" path="mbed/TARGET_KL25Z/core_cm4.h" type="1"/>
+    <File name="headers/mbed/sleep_api.h" path="mbed/sleep_api.h" type="1"/>
+    <File name="headers/mbed/InterruptIn.h" path="mbed/InterruptIn.h" type="1"/>
+    <File name="headers/mbed/serial_api.h" path="mbed/serial_api.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_cm0plus.h" path="mbed/TARGET_KL25Z/core_cm0plus.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/clk_freqs.h" path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/clk_freqs.h" type="1"/>
+    <File name="headers/mbed/spi_api.h" path="mbed/spi_api.h" type="1"/>
+    <File name="headers/mbed/FilePath.h" path="mbed/FilePath.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_sc300.h" path="mbed/TARGET_KL25Z/core_sc300.h" type="1"/>
+    <File name="headers/mbed/DigitalIn.h" path="mbed/DigitalIn.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/cmsis_nvic.h" path="mbed/TARGET_KL25Z/cmsis_nvic.h" type="1"/>
+    <File name="headers/mbed/CAN.h" path="mbed/CAN.h" type="1"/>
+    <File name="headers/mbed/pinmap.h" path="mbed/pinmap.h" type="1"/>
+    <File name="headers" path="" type="2"/>
+    <File name="headers/mbed/rtc_api.h" path="mbed/rtc_api.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/MKL25Z4.h" path="mbed/TARGET_KL25Z/MKL25Z4.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z/PinNames.h" path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z/PinNames.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_caFunc.h" path="mbed/TARGET_KL25Z/core_caFunc.h" type="1"/>
+    <File name="headers/mbed/SerialBase.h" path="mbed/SerialBase.h" type="1"/>
+    <File name="headers/mbed/ethernet_api.h" path="mbed/ethernet_api.h" type="1"/>
+    <File name="headers/mbed/mbed_assert.h" path="mbed/mbed_assert.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_cm4_simd.h" path="mbed/TARGET_KL25Z/core_cm4_simd.h" type="1"/>
+    <File name="headers/mbed/PwmOut.h" path="mbed/PwmOut.h" type="1"/>
+    <File name="headers/mbed/Ethernet.h" path="mbed/Ethernet.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_cmSimd.h" path="mbed/TARGET_KL25Z/core_cmSimd.h" type="1"/>
+    <File name="headers/mbed/FileSystemLike.h" path="mbed/FileSystemLike.h" type="1"/>
+    <File name="headers/mbed/I2C.h" path="mbed/I2C.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_cm3.h" path="mbed/TARGET_KL25Z/core_cm3.h" type="1"/>
+    <File name="headers/mbed/analogout_api.h" path="mbed/analogout_api.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_caInstr.h" path="mbed/TARGET_KL25Z/core_caInstr.h" type="1"/>
+    <File name="headers/mbed/Serial.h" path="mbed/Serial.h" type="1"/>
+    <File name="headers/mbed/DirHandle.h" path="mbed/DirHandle.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale" path="" type="2"/>
+    <File name="headers/mbed/mbed_debug.h" path="mbed/mbed_debug.h" type="1"/>
+    <File name="headers/mbed/platform.h" path="mbed/platform.h" type="1"/>
+    <File name="headers/mbed/Stream.h" path="mbed/Stream.h" type="1"/>
+    <File name="headers/mbed/PortIn.h" path="mbed/PortIn.h" type="1"/>
+    <File name="headers/mbed/AnalogIn.h" path="mbed/AnalogIn.h" type="1"/>
+    <File name="headers/mbed/LowPowerTimer.h" path="mbed/LowPowerTimer.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_cm7.h" path="mbed/TARGET_KL25Z/core_cm7.h" type="1"/>
+    <File name="headers/mbed/dma_api.h" path="mbed/dma_api.h" type="1"/>
+    <File name="headers/mbed/SPISlave.h" path="mbed/SPISlave.h" type="1"/>
+    <File name="headers/mbed/SPI.h" path="mbed/SPI.h" type="1"/>
+    <File name="headers/mbed/Timeout.h" path="mbed/Timeout.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z" path="" type="2"/>
+    <File name="headers/mbed/i2c_api.h" path="mbed/i2c_api.h" type="1"/>
+    <File name="headers/mbed/RawSerial.h" path="mbed/RawSerial.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_cmInstr.h" path="mbed/TARGET_KL25Z/core_cmInstr.h" type="1"/>
+    <File name="headers/mbed/LocalFileSystem.h" path="mbed/LocalFileSystem.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z/device.h" path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z/device.h" type="1"/>
+    <File name="headers/mbed/LowPowerTicker.h" path="mbed/LowPowerTicker.h" type="1"/>
+    <File name="headers/mbed" path="" type="2"/>
+    <File name="headers/mbed/DigitalInOut.h" path="mbed/DigitalInOut.h" type="1"/>
+    <File name="headers/mbed/BusInOut.h" path="mbed/BusInOut.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_cmFunc.h" path="mbed/TARGET_KL25Z/core_cmFunc.h" type="1"/>
+    <File name="headers/mbed/FunctionPointer.h" path="mbed/FunctionPointer.h" type="1"/>
+    <File name="headers/mbed/BusOut.h" path="mbed/BusOut.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX" path="" type="2"/>
+    <File name="headers/mbed/Timer.h" path="mbed/Timer.h" type="1"/>
+    <File name="headers/mbed/port_api.h" path="mbed/port_api.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/PortNames.h" path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/PortNames.h" type="1"/>
+    <File name="headers/mbed/semihost_api.h" path="mbed/semihost_api.h" type="1"/>
+    <File name="headers/mbed/TimerEvent.h" path="mbed/TimerEvent.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/arm_math.h" path="mbed/TARGET_KL25Z/arm_math.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/arm_common_tables.h" path="mbed/TARGET_KL25Z/arm_common_tables.h" type="1"/>
+    <File name="headers/mbed/FileHandle.h" path="mbed/FileHandle.h" type="1"/>
+    <File name="headers/mbed/toolchain.h" path="mbed/toolchain.h" type="1"/>
+    <File name="headers/mbed/InterruptManager.h" path="mbed/InterruptManager.h" type="1"/>
+    <File name="headers/mbed/pwmout_api.h" path="mbed/pwmout_api.h" type="1"/>
+    <File name="headers/mbed/ticker_api.h" path="mbed/ticker_api.h" type="1"/>
+    <File name="headers/mbed/buffer.h" path="mbed/buffer.h" type="1"/>
+    <File name="headers/mbed/FileBase.h" path="mbed/FileBase.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/system_MKL25Z4.h" path="mbed/TARGET_KL25Z/system_MKL25Z4.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_ca_mmu.h" path="mbed/TARGET_KL25Z/core_ca_mmu.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/arm_const_structs.h" path="mbed/TARGET_KL25Z/arm_const_structs.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_sc000.h" path="mbed/TARGET_KL25Z/core_sc000.h" type="1"/>
+    <File name="headers/mbed/CThunk.h" path="mbed/CThunk.h" type="1"/>
+    <File name="headers/mbed/LowPowerTimeout.h" path="mbed/LowPowerTimeout.h" type="1"/>
+    <File name="headers/mbed/lp_ticker_api.h" path="mbed/lp_ticker_api.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/cmsis.h" path="mbed/TARGET_KL25Z/cmsis.h" type="1"/>
+    <File name="headers/mbed/I2CSlave.h" path="mbed/I2CSlave.h" type="1"/>
+    <File name="headers/mbed/CircularBuffer.h" path="mbed/CircularBuffer.h" type="1"/>
+    <File name="headers/mbed/mbed_interface.h" path="mbed/mbed_interface.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_cm0.h" path="mbed/TARGET_KL25Z/core_cm0.h" type="1"/>
+    <File name="headers/mbed/can_helper.h" path="mbed/can_helper.h" type="1"/>
+    <File name="headers/mbed/CallChain.h" path="mbed/CallChain.h" type="1"/>
+    <File name="headers/mbed/wait_api.h" path="mbed/wait_api.h" type="1"/>
+    <File name="headers/mbed/gpio_irq_api.h" path="mbed/gpio_irq_api.h" type="1"/>
+    <File name="headers/mbed/PortInOut.h" path="mbed/PortInOut.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z" path="" type="2"/>
+    <File name="sources" path="" type="2"/>
+    <File name="headers/mbed/mbed.h" path="mbed/mbed.h" type="1"/>
+    <File name="headers/mbed/AnalogOut.h" path="mbed/AnalogOut.h" type="1"/>
+    <File name="headers/mbed/Ticker.h" path="mbed/Ticker.h" type="1"/>
+    <File name="headers/mbed/can_api.h" path="mbed/can_api.h" type="1"/>
+    <File name="headers/mbed/PortOut.h" path="mbed/PortOut.h" type="1"/>
+    <File name="sources/main.cpp" path="main.cpp" type="1"/>
+    <File name="headers/mbed/us_ticker_api.h" path="mbed/us_ticker_api.h" type="1"/>
+    <File name="headers/mbed/DigitalOut.h" path="mbed/DigitalOut.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/PeripheralPins.h" path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/PeripheralPins.h" type="1"/>
+    <File name="headers/mbed/BusIn.h" path="mbed/BusIn.h" type="1"/>
+    <File name="headers/mbed/analogin_api.h" path="mbed/analogin_api.h" type="1"/>
+    <File name="headers/mbed/rtc_time.h" path="mbed/rtc_time.h" type="1"/>
+    <File name="headers/mbed/Transaction.h" path="mbed/Transaction.h" type="1"/>
+    <File name="headers/mbed/gpio_api.h" path="mbed/gpio_api.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/objects.h" path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/objects.h" type="1"/>
+    <File name="headers/mbed/mbed_error.h" path="mbed/mbed_error.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z/PeripheralNames.h" path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/TARGET_KL25Z/PeripheralNames.h" type="1"/>
+    <File name="headers/mbed/FileLike.h" path="mbed/FileLike.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/core_ca9.h" path="mbed/TARGET_KL25Z/core_ca9.h" type="1"/>
+    <File name="headers/mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/gpio_object.h" path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX/gpio_object.h" type="1"/>
+  </Files>
+</Project>
