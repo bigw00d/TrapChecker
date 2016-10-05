@@ -2300,8 +2300,8 @@ OUTPUT(frdm_im920c_snd.elf elf32-littlearm)
 .debug_ranges   0x00000000      0x268
  .debug_ranges  0x00000000      0x268 ..\obj\main.o
 
-.debug_line     0x00000000      0x93e
- .debug_line    0x00000000      0x93e ..\obj\main.o
+.debug_line     0x00000000      0x938
+ .debug_line    0x00000000      0x938 ..\obj\main.o
 
 .debug_str      0x00000000     0x15b1
  .debug_str     0x00000000     0x15b1 ..\obj\main.o

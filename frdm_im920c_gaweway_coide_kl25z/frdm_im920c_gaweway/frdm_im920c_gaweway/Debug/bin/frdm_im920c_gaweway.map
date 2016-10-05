@@ -293,6 +293,8 @@ Discarded input sections
  .text          0x00000000        0x0 ..\obj\main.o
  .data          0x00000000        0x0 ..\obj\main.o
  .bss           0x00000000        0x0 ..\obj\main.o
+ .text._Z8AutoSendv
+                0x00000000       0xb8 ..\obj\main.o
  .text._Z13alertCallbackv
                 0x00000000       0x48 ..\obj\main.o
  .text._Z11startAlert1v
@@ -996,7 +998,7 @@ LOAD E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_ga
                 0x00000400       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/startup_MKL25Z4.o
                 0x00000410                . = ALIGN (0x4)
 
-.text           0x00000410     0x5128
+.text           0x00000410     0x5140
  *(.text*)
  .text          0x00000410       0xb4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
  .text          0x000004c4       0x78 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
@@ -1149,567 +1151,567 @@ LOAD E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_ga
                 0x00000c64       0x34 ..\obj\main.o
                 0x00000c64                push2()
  .text.startup.main
-                0x00000c98      0x3ec ..\obj\main.o
+                0x00000c98      0x3e4 ..\obj\main.o
                 0x00000c98                main
  .text._ZN4mbed6SerialD0Ev
-                0x00001084       0x34 ..\obj\main.o
-                0x00001084                mbed::Serial::~Serial()
-                0x00001096                non-virtual thunk to mbed::Serial::~Serial()
-                0x000010a8                non-virtual thunk to mbed::Serial::~Serial()
+                0x0000107c       0x34 ..\obj\main.o
+                0x0000107c                mbed::Serial::~Serial()
+                0x0000108e                non-virtual thunk to mbed::Serial::~Serial()
+                0x000010a0                non-virtual thunk to mbed::Serial::~Serial()
  .text.startup._GLOBAL__sub_I_myled
-                0x000010b8      0x110 ..\obj\main.o
+                0x000010b0      0x12c ..\obj\main.o
  .text.mcgpllfll_frequency.part.0
-                0x000011c8       0x4c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x000011dc       0x4c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .text.uart0_irq
-                0x00001214       0x50 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x00001214                uart0_irq
+                0x00001228       0x50 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x00001228                uart0_irq
  .text.uart2_irq
-                0x00001264       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x00001264                uart2_irq
+                0x00001278       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x00001278                uart2_irq
  .text.uart1_irq
-                0x000012a4       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x000012a4                uart1_irq
+                0x000012b8       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x000012b8                uart1_irq
  .text.serial_baud
-                0x000012e4      0x16c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x000012e4                serial_baud
+                0x000012f8      0x16c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x000012f8                serial_baud
  .text.serial_format
-                0x00001450       0x94 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x00001450                serial_format
+                0x00001464       0x94 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x00001464                serial_format
  .text.serial_init
-                0x000014e4      0x1d0 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x000014e4                serial_init
+                0x000014f8      0x1d0 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x000014f8                serial_init
  .text.serial_irq_handler
-                0x000016b4       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x000016b4                serial_irq_handler
+                0x000016c8       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x000016c8                serial_irq_handler
  .text.serial_irq_set
-                0x000016cc       0xd4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x000016cc                serial_irq_set
+                0x000016e0       0xd4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x000016e0                serial_irq_set
  .text.serial_getc
-                0x000017a0       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x000017a0                serial_getc
+                0x000017b4       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x000017b4                serial_getc
  .text.serial_putc
-                0x000017c8       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x000017c8                serial_putc
+                0x000017dc       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x000017dc                serial_putc
  .text.serial_readable
-                0x000017f0       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x000017f0                serial_readable
+                0x00001804       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x00001804                serial_readable
  .text.pin_function
-                0x0000180c       0x60 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
-                0x0000180c                pin_function
+                0x00001820       0x60 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
+                0x00001820                pin_function
  .text.pin_mode
-                0x0000186c       0x34 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
-                0x0000186c                pin_mode
- .text.sleep    0x000018a0       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(sleep.o)
-                0x000018a0                sleep
+                0x00001880       0x34 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
+                0x00001880                pin_mode
+ .text.sleep    0x000018b4       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(sleep.o)
+                0x000018b4                sleep
  .text._ZN4mbed8FilePathC2EPKc
-                0x000018b8       0x58 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
-                0x000018b8                mbed::FilePath::FilePath(char const*)
-                0x000018b8                mbed::FilePath::FilePath(char const*)
+                0x000018cc       0x58 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
+                0x000018cc                mbed::FilePath::FilePath(char const*)
+                0x000018cc                mbed::FilePath::FilePath(char const*)
  .text._ZN4mbed8FilePath8fileNameEv
-                0x00001910        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
-                0x00001910                mbed::FilePath::fileName()
+                0x00001924        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
+                0x00001924                mbed::FilePath::fileName()
  .text._ZN4mbed8FilePath10fileSystemEv
-                0x00001914       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
-                0x00001914                mbed::FilePath::fileSystem()
+                0x00001928       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
+                0x00001928                mbed::FilePath::fileSystem()
  .text._ZN4mbed8FilePath6isFileEv
-                0x00001930       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
-                0x00001930                mbed::FilePath::isFile()
+                0x00001944       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
+                0x00001944                mbed::FilePath::isFile()
  .text._ZN4mbed8FilePath4fileEv
-                0x00001948       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
-                0x00001948                mbed::FilePath::file()
+                0x0000195c       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
+                0x0000195c                mbed::FilePath::file()
  .text._ZN4mbed8FilePath6existsEv
-                0x0000196c        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
-                0x0000196c                mbed::FilePath::exists()
+                0x00001980        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
+                0x00001980                mbed::FilePath::exists()
  .text._ZN4mbed11InterruptInD2Ev
-                0x00001978       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
-                0x00001978                mbed::InterruptIn::~InterruptIn()
-                0x00001978                mbed::InterruptIn::~InterruptIn()
+                0x0000198c       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
+                0x0000198c                mbed::InterruptIn::~InterruptIn()
+                0x0000198c                mbed::InterruptIn::~InterruptIn()
  .text._ZN4mbed11InterruptInD0Ev
-                0x00001990       0x20 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
-                0x00001990                mbed::InterruptIn::~InterruptIn()
+                0x000019a4       0x20 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
+                0x000019a4                mbed::InterruptIn::~InterruptIn()
  .text._ZN4mbed11InterruptIn12_irq_handlerEm14gpio_irq_event
-                0x000019b0       0x4c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
-                0x000019b0                mbed::InterruptIn::_irq_handler(unsigned long, gpio_irq_event)
+                0x000019c4       0x4c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
+                0x000019c4                mbed::InterruptIn::_irq_handler(unsigned long, gpio_irq_event)
  .text._ZN4mbed11InterruptInC2E7PinName
-                0x000019fc       0x48 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
-                0x000019fc                mbed::InterruptIn::InterruptIn(PinName)
-                0x000019fc                mbed::InterruptIn::InterruptIn(PinName)
+                0x00001a10       0x48 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
+                0x00001a10                mbed::InterruptIn::InterruptIn(PinName)
+                0x00001a10                mbed::InterruptIn::InterruptIn(PinName)
  .text._ZN4mbed11InterruptIn4modeE7PinMode
-                0x00001a44        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
-                0x00001a44                mbed::InterruptIn::mode(PinMode)
+                0x00001a58        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
+                0x00001a58                mbed::InterruptIn::mode(PinMode)
  .text._ZN4mbed11InterruptIn4fallEPFvvE
-                0x00001a50       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
-                0x00001a50                mbed::InterruptIn::fall(void (*)())
+                0x00001a64       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
+                0x00001a64                mbed::InterruptIn::fall(void (*)())
  .text._ZN4mbed6Serial5_getcEv
-                0x00001a78        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
-                0x00001a78                mbed::Serial::_getc()
+                0x00001a8c        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
+                0x00001a8c                mbed::Serial::_getc()
  .text._ZThn64_N4mbed6Serial5_getcEv
-                0x00001a80       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
-                0x00001a80                non-virtual thunk to mbed::Serial::_getc()
+                0x00001a94       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
+                0x00001a94                non-virtual thunk to mbed::Serial::_getc()
  .text._ZN4mbed6Serial5_putcEi
-                0x00001a90        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
-                0x00001a90                mbed::Serial::_putc(int)
+                0x00001aa4        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
+                0x00001aa4                mbed::Serial::_putc(int)
  .text._ZThn64_N4mbed6Serial5_putcEi
-                0x00001a98       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
-                0x00001a98                non-virtual thunk to mbed::Serial::_putc(int)
+                0x00001aac       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
+                0x00001aac                non-virtual thunk to mbed::Serial::_putc(int)
  .text._ZN4mbed6SerialC2E7PinNameS1_PKc
-                0x00001aa8       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
-                0x00001aa8                mbed::Serial::Serial(PinName, PinName, char const*)
-                0x00001aa8                mbed::Serial::Serial(PinName, PinName, char const*)
+                0x00001abc       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
+                0x00001abc                mbed::Serial::Serial(PinName, PinName, char const*)
+                0x00001abc                mbed::Serial::Serial(PinName, PinName, char const*)
  .text._ZN4mbed10SerialBase12_irq_handlerEm9SerialIrq
-                0x00001ad8       0x3c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x00001ad8                mbed::SerialBase::_irq_handler(unsigned long, SerialIrq)
+                0x00001aec       0x3c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x00001aec                mbed::SerialBase::_irq_handler(unsigned long, SerialIrq)
  .text._ZN4mbed10SerialBaseC2E7PinNameS1_
-                0x00001b14       0x3c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x00001b14                mbed::SerialBase::SerialBase(PinName, PinName)
-                0x00001b14                mbed::SerialBase::SerialBase(PinName, PinName)
+                0x00001b28       0x3c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x00001b28                mbed::SerialBase::SerialBase(PinName, PinName)
+                0x00001b28                mbed::SerialBase::SerialBase(PinName, PinName)
  .text._ZN4mbed10SerialBase4baudEi
-                0x00001b50       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x00001b50                mbed::SerialBase::baud(int)
+                0x00001b64       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x00001b64                mbed::SerialBase::baud(int)
  .text._ZN4mbed10SerialBase8readableEv
-                0x00001b60        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x00001b60                mbed::SerialBase::readable()
+                0x00001b74        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x00001b74                mbed::SerialBase::readable()
  .text._ZN4mbed10SerialBase6attachEPFvvENS0_7IrqTypeE
-                0x00001b6c       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x00001b6c                mbed::SerialBase::attach(void (*)(), mbed::SerialBase::IrqType)
+                0x00001b80       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x00001b80                mbed::SerialBase::attach(void (*)(), mbed::SerialBase::IrqType)
  .text._ZN4mbed10SerialBase10_base_getcEv
-                0x00001b9c        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x00001b9c                mbed::SerialBase::_base_getc()
+                0x00001bb0        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x00001bb0                mbed::SerialBase::_base_getc()
  .text._ZN4mbed10SerialBase10_base_putcEi
-                0x00001ba8       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x00001ba8                mbed::SerialBase::_base_putc(int)
+                0x00001bbc       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x00001bbc                mbed::SerialBase::_base_putc(int)
  .text._ZN4mbed6Ticker7handlerEv
-                0x00001bb8       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Ticker.o)
-                0x00001bb8                mbed::Ticker::handler()
+                0x00001bcc       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Ticker.o)
+                0x00001bcc                mbed::Ticker::handler()
  .text._ZN4mbed6Ticker6detachEv
-                0x00001be8       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Ticker.o)
-                0x00001be8                mbed::Ticker::detach()
+                0x00001bfc       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Ticker.o)
+                0x00001bfc                mbed::Ticker::detach()
  .text._ZN4mbed6Ticker5setupEm
-                0x00001bf8       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Ticker.o)
-                0x00001bf8                mbed::Ticker::setup(unsigned long)
+                0x00001c0c       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Ticker.o)
+                0x00001c0c                mbed::Ticker::setup(unsigned long)
  .text._ZN4mbed6Stream5closeEv
-                0x00001c14        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001c14                mbed::Stream::close()
+                0x00001c28        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001c28                mbed::Stream::close()
  .text._ZN4mbed6Stream5writeEPKvj
-                0x00001c18       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001c18                mbed::Stream::write(void const*, unsigned int)
+                0x00001c2c       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001c2c                mbed::Stream::write(void const*, unsigned int)
  .text._ZN4mbed6Stream4readEPvj
-                0x00001c44       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001c44                mbed::Stream::read(void*, unsigned int)
+                0x00001c58       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001c58                mbed::Stream::read(void*, unsigned int)
  .text._ZN4mbed6Stream5lseekEli
-                0x00001c70        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001c70                mbed::Stream::lseek(long, int)
+                0x00001c84        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001c84                mbed::Stream::lseek(long, int)
  .text._ZN4mbed6Stream6isattyEv
-                0x00001c74        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001c74                mbed::Stream::isatty()
+                0x00001c88        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001c88                mbed::Stream::isatty()
  .text._ZN4mbed6Stream5fsyncEv
-                0x00001c78        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001c78                mbed::Stream::fsync()
+                0x00001c8c        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001c8c                mbed::Stream::fsync()
  .text._ZN4mbed6Stream4flenEv
-                0x00001c7c        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001c7c                mbed::Stream::flen()
+                0x00001c90        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001c90                mbed::Stream::flen()
  .text._ZN4mbed6StreamC2EPKc
-                0x00001c80       0x44 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001c80                mbed::Stream::Stream(char const*)
-                0x00001c80                mbed::Stream::Stream(char const*)
+                0x00001c94       0x44 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001c94                mbed::Stream::Stream(char const*)
+                0x00001c94                mbed::Stream::Stream(char const*)
  .text._ZN4mbed6StreamD2Ev
-                0x00001cc4       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001cc4                mbed::Stream::~Stream()
-                0x00001cc4                mbed::Stream::~Stream()
+                0x00001cd8       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001cd8                mbed::Stream::~Stream()
+                0x00001cd8                mbed::Stream::~Stream()
  .text._ZN4mbed6Stream4putcEi
-                0x00001ce8       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001ce8                mbed::Stream::putc(int)
+                0x00001cfc       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001cfc                mbed::Stream::putc(int)
  .text._ZN4mbed6Stream4getcEv
-                0x00001d00       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00001d00                mbed::Stream::getc()
+                0x00001d14       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x00001d14                mbed::Stream::getc()
  .text.mbed_assert_internal
-                0x00001d14       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
-                0x00001d14                mbed_assert_internal
+                0x00001d28       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
+                0x00001d28                mbed_assert_internal
  .text._ZN4mbed10TimerEvent3irqEm
-                0x00001d2c        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
-                0x00001d2c                mbed::TimerEvent::irq(unsigned long)
+                0x00001d40        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
+                0x00001d40                mbed::TimerEvent::irq(unsigned long)
  .text._ZN4mbed10TimerEventC2Ev
-                0x00001d38       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
-                0x00001d38                mbed::TimerEvent::TimerEvent()
-                0x00001d38                mbed::TimerEvent::TimerEvent()
+                0x00001d4c       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
+                0x00001d4c                mbed::TimerEvent::TimerEvent()
+                0x00001d4c                mbed::TimerEvent::TimerEvent()
  .text._ZN4mbed10TimerEventD2Ev
-                0x00001d64       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
-                0x00001d64                mbed::TimerEvent::~TimerEvent()
-                0x00001d64                mbed::TimerEvent::~TimerEvent()
+                0x00001d78       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
+                0x00001d78                mbed::TimerEvent::~TimerEvent()
+                0x00001d78                mbed::TimerEvent::~TimerEvent()
  .text._ZN4mbed10TimerEvent6insertEm
-                0x00001d80       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
-                0x00001d80                mbed::TimerEvent::insert(unsigned long)
+                0x00001d94       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
+                0x00001d94                mbed::TimerEvent::insert(unsigned long)
  .text._ZN4mbed10TimerEvent6removeEv
-                0x00001d90       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
-                0x00001d90                mbed::TimerEvent::remove()
- .text.error    0x00001da0       0x20 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(error.o)
-                0x00001da0                error
+                0x00001da4       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
+                0x00001da4                mbed::TimerEvent::remove()
+ .text.error    0x00001db4       0x20 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(error.o)
+                0x00001db4                error
  .text.gpio_init_in
-                0x00001dc0       0x20 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
-                0x00001dc0                gpio_init_in
+                0x00001dd4       0x20 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
+                0x00001dd4                gpio_init_in
  .text.gpio_init_out
-                0x00001de0       0x44 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
-                0x00001de0                gpio_init_out
+                0x00001df4       0x44 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
+                0x00001df4                gpio_init_out
  .text.mbed_interface_connected
-                0x00001e24        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(mbed_interface.o)
-                0x00001e24                mbed_interface_connected
+                0x00001e38        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(mbed_interface.o)
+                0x00001e38                mbed_interface_connected
  .text.pinmap_pinout
-                0x00001e2c       0x38 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
-                0x00001e2c                pinmap_pinout
+                0x00001e40       0x38 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
+                0x00001e40                pinmap_pinout
  .text.pinmap_merge
-                0x00001e64       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
-                0x00001e64                pinmap_merge
+                0x00001e78       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
+                0x00001e78                pinmap_merge
  .text.pinmap_peripheral
-                0x00001e88       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
-                0x00001e88                pinmap_peripheral
+                0x00001e9c       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
+                0x00001e9c                pinmap_peripheral
  .text.semihost_exit
-                0x00001eb8       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(semihost_api.o)
-                0x00001eb8                semihost_exit
+                0x00001ecc       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(semihost_api.o)
+                0x00001ecc                semihost_exit
  .text.semihost_connected
-                0x00001ed0        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(semihost_api.o)
-                0x00001ed0                semihost_connected
+                0x00001ee4        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(semihost_api.o)
+                0x00001ee4                semihost_connected
  .text.ticker_set_handler
-                0x00001edc       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
-                0x00001edc                ticker_set_handler
+                0x00001ef0       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
+                0x00001ef0                ticker_set_handler
  .text.ticker_irq_handler
-                0x00001ef0       0x4c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
-                0x00001ef0                ticker_irq_handler
+                0x00001f04       0x4c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
+                0x00001f04                ticker_irq_handler
  .text.ticker_insert_event
-                0x00001f3c       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
-                0x00001f3c                ticker_insert_event
+                0x00001f50       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
+                0x00001f50                ticker_insert_event
  .text.ticker_remove_event
-                0x00001f7c       0x48 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
-                0x00001f7c                ticker_remove_event
+                0x00001f90       0x48 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
+                0x00001f90                ticker_remove_event
  .text.ticker_read
-                0x00001fc4        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
-                0x00001fc4                ticker_read
+                0x00001fd8        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
+                0x00001fd8                ticker_read
  .text.get_us_ticker_data
-                0x00001fd0        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
-                0x00001fd0                get_us_ticker_data
+                0x00001fe4        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x00001fe4                get_us_ticker_data
  .text.us_ticker_irq_handler
-                0x00001fd8       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
-                0x00001fd8                us_ticker_irq_handler
- .text.wait_us  0x00001fe8       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
-                0x00001fe8                wait_us
- .text.wait_ms  0x00002000       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
-                0x00002000                wait_ms
+                0x00001fec       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x00001fec                us_ticker_irq_handler
+ .text.wait_us  0x00001ffc       0x18 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
+                0x00001ffc                wait_us
+ .text.wait_ms  0x00002014       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
+                0x00002014                wait_ms
  .text.handle_interrupt_in
-                0x00002010       0xe0 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x00002024       0xe0 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
  .text.gpio_irqA
-                0x000020f0       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
-                0x000020f0                gpio_irqA
+                0x00002104       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x00002104                gpio_irqA
  .text.gpio_irqD
-                0x00002100       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
-                0x00002100                gpio_irqD
+                0x00002114       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x00002114                gpio_irqD
  .text.gpio_irq_init
-                0x00002110       0x8c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
-                0x00002110                gpio_irq_init
+                0x00002124       0x8c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x00002124                gpio_irq_init
  .text.gpio_irq_free
-                0x0000219c       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
-                0x0000219c                gpio_irq_free
+                0x000021b0       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x000021b0                gpio_irq_free
  .text.gpio_irq_set
-                0x000021ac       0xa4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
-                0x000021ac                gpio_irq_set
+                0x000021c0       0xa4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x000021c0                gpio_irq_set
  .text.gpio_set
-                0x00002250       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
-                0x00002250                gpio_set
+                0x00002264       0x30 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x00002264                gpio_set
  .text.gpio_init
-                0x00002280       0x34 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
-                0x00002280                gpio_init
+                0x00002294       0x34 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x00002294                gpio_init
  .text.gpio_mode
-                0x000022b4        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
-                0x000022b4                gpio_mode
+                0x000022c8        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x000022c8                gpio_mode
  .text.gpio_dir
-                0x000022c0       0x44 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
-                0x000022c0                gpio_dir
+                0x000022d4       0x44 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x000022d4                gpio_dir
  .text.pit_init
-                0x00002304       0x78 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x00002318       0x78 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
  .text.lptmr_init
-                0x0000237c      0x1b0 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x00002390      0x1b0 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
  .text.lptmr_isr
-                0x0000252c       0x68 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x00002540       0x68 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
  .text.us_ticker_init
-                0x00002594       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x00002594                us_ticker_init
+                0x000025a8       0x1c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x000025a8                us_ticker_init
  .text.us_ticker_read
-                0x000025b0       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x000025b0                us_ticker_read
+                0x000025c4       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x000025c4                us_ticker_read
  .text.us_ticker_disable_interrupt
-                0x000025dc       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x000025dc                us_ticker_disable_interrupt
+                0x000025f0       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x000025f0                us_ticker_disable_interrupt
  .text.us_ticker_clear_interrupt
-                0x000025ec        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x000025ec                us_ticker_clear_interrupt
+                0x00002600        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x00002600                us_ticker_clear_interrupt
  .text.us_ticker_set_interrupt
-                0x000025f0       0x6c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x000025f0                us_ticker_set_interrupt
+                0x00002604       0x6c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x00002604                us_ticker_set_interrupt
  .text._ZN4mbed8FileBaseD2Ev
-                0x0000265c       0x34 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
-                0x0000265c                mbed::FileBase::~FileBase()
-                0x0000265c                mbed::FileBase::~FileBase()
+                0x00002670       0x34 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
+                0x00002670                mbed::FileBase::~FileBase()
+                0x00002670                mbed::FileBase::~FileBase()
  .text._ZN4mbed8FileBaseD0Ev
-                0x00002690       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
-                0x00002690                mbed::FileBase::~FileBase()
+                0x000026a4       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
+                0x000026a4                mbed::FileBase::~FileBase()
  .text._ZN4mbed8FileBaseC2EPKcNS_8PathTypeE
-                0x000026d0       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
-                0x000026d0                mbed::FileBase::FileBase(char const*, mbed::PathType)
-                0x000026d0                mbed::FileBase::FileBase(char const*, mbed::PathType)
+                0x000026e4       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
+                0x000026e4                mbed::FileBase::FileBase(char const*, mbed::PathType)
+                0x000026e4                mbed::FileBase::FileBase(char const*, mbed::PathType)
  .text._ZN4mbed8FileBase6lookupEPKcj
-                0x000026f4       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
-                0x000026f4                mbed::FileBase::lookup(char const*, unsigned int)
+                0x00002708       0x40 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
+                0x00002708                mbed::FileBase::lookup(char const*, unsigned int)
  .text._ZN4mbed8FileBase11getPathTypeEv
-                0x00002734        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
-                0x00002734                mbed::FileBase::getPathType()
+                0x00002748        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
+                0x00002748                mbed::FileBase::getPathType()
  .text._ZN4mbed8FileLikeC2EPKc
-                0x00002738       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileLike.o)
-                0x00002738                mbed::FileLike::FileLike(char const*)
-                0x00002738                mbed::FileLike::FileLike(char const*)
+                0x0000274c       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileLike.o)
+                0x0000274c                mbed::FileLike::FileLike(char const*)
+                0x0000274c                mbed::FileLike::FileLike(char const*)
  .text._ZN4mbed8FileLikeD2Ev
-                0x00002760       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileLike.o)
-                0x00002760                mbed::FileLike::~FileLike()
-                0x00002760                mbed::FileLike::~FileLike()
+                0x00002774       0x24 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileLike.o)
+                0x00002774                mbed::FileLike::~FileLike()
+                0x00002774                mbed::FileLike::~FileLike()
  .text.__aeabi_atexit
-                0x00002784        0xe e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libstdc++_nano.a(atexit_arm.o)
-                0x00002784                __aeabi_atexit
- .text._ZdlPv   0x00002792        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libstdc++_nano.a(del_op.o)
-                0x00002792                operator delete(void*)
- *fill*         0x0000279a        0x2 
- .text          0x0000279c      0x114 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m\libgcc.a(_udivsi3.o)
-                0x0000279c                __aeabi_uidiv
-                0x0000279c                __udivsi3
-                0x000028a8                __aeabi_uidivmod
- .text          0x000028b0        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m\libgcc.a(_dvmd_tls.o)
-                0x000028b0                __aeabi_idiv0
-                0x000028b0                __aeabi_ldiv0
+                0x00002798        0xe e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libstdc++_nano.a(atexit_arm.o)
+                0x00002798                __aeabi_atexit
+ .text._ZdlPv   0x000027a6        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libstdc++_nano.a(del_op.o)
+                0x000027a6                operator delete(void*)
+ *fill*         0x000027ae        0x2 
+ .text          0x000027b0      0x114 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m\libgcc.a(_udivsi3.o)
+                0x000027b0                __aeabi_uidiv
+                0x000027b0                __udivsi3
+                0x000028bc                __aeabi_uidivmod
+ .text          0x000028c4        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x000028c4                __aeabi_idiv0
+                0x000028c4                __aeabi_ldiv0
  .text.__cxa_atexit
-                0x000028b4       0x1c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-cxa_atexit.o)
-                0x000028b4                __cxa_atexit
- .text.__errno  0x000028d0        0xc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-errno.o)
-                0x000028d0                __errno
- .text.exit     0x000028dc       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-exit.o)
-                0x000028dc                exit
+                0x000028c8       0x1c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-cxa_atexit.o)
+                0x000028c8                __cxa_atexit
+ .text.__errno  0x000028e4        0xc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-errno.o)
+                0x000028e4                __errno
+ .text.exit     0x000028f0       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-exit.o)
+                0x000028f0                exit
  .text._fclose_r
-                0x00002908       0xb0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fclose.o)
-                0x00002908                _fclose_r
- .text.fclose   0x000029b8       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fclose.o)
-                0x000029b8                fclose
+                0x0000291c       0xb0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fclose.o)
+                0x0000291c                _fclose_r
+ .text.fclose   0x000029cc       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fclose.o)
+                0x000029cc                fclose
  .text.__sflush_r
-                0x000029cc      0x10c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fflush.o)
-                0x000029cc                __sflush_r
+                0x000029e0      0x10c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fflush.o)
+                0x000029e0                __sflush_r
  .text._fflush_r
-                0x00002ad8       0x58 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fflush.o)
-                0x00002ad8                _fflush_r
- .text.fflush   0x00002b30       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fflush.o)
-                0x00002b30                fflush
+                0x00002aec       0x58 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fflush.o)
+                0x00002aec                _fflush_r
+ .text.fflush   0x00002b44       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fflush.o)
+                0x00002b44                fflush
  .text._fgetc_r
-                0x00002b58       0x5c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fgetc.o)
-                0x00002b58                _fgetc_r
- .text.fgetc    0x00002bb4       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fgetc.o)
-                0x00002bb4                fgetc
+                0x00002b6c       0x5c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fgetc.o)
+                0x00002b6c                _fgetc_r
+ .text.fgetc    0x00002bc8       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fgetc.o)
+                0x00002bc8                fgetc
  .text._cleanup_r
-                0x00002bc8       0x10 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x00002bc8                _cleanup_r
+                0x00002bdc       0x10 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x00002bdc                _cleanup_r
  .text.std.isra.0
-                0x00002bd8       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x00002bec       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x00002c20       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x00002c20                __sfmoreglue
- .text.__sinit  0x00002c4c       0x68 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x00002c4c                __sinit
- .text.__sfp    0x00002cb4       0x7c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x00002cb4                __sfp
+                0x00002c34       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x00002c34                __sfmoreglue
+ .text.__sinit  0x00002c60       0x68 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x00002c60                __sinit
+ .text.__sfp    0x00002cc8       0x7c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x00002cc8                __sfp
  .text.__sfp_lock_acquire
-                0x00002d30        0x2 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x00002d30                __sfp_lock_acquire
+                0x00002d44        0x2 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x00002d44                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x00002d32        0x2 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x00002d32                __sfp_lock_release
+                0x00002d46        0x2 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x00002d46                __sfp_lock_release
  .text._fopen_r
-                0x00002d34       0x7c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fopen.o)
-                0x00002d34                _fopen_r
- .text.fopen    0x00002db0       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fopen.o)
-                0x00002db0                fopen
+                0x00002d48       0x7c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fopen.o)
+                0x00002d48                _fopen_r
+ .text.fopen    0x00002dc4       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fopen.o)
+                0x00002dc4                fopen
  .text._fputc_r
-                0x00002dc4       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fputc.o)
-                0x00002dc4                _fputc_r
- .text.fputc    0x00002e10       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fputc.o)
-                0x00002e10                fputc
+                0x00002dd8       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fputc.o)
+                0x00002dd8                _fputc_r
+ .text.fputc    0x00002e24       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fputc.o)
+                0x00002e24                fputc
  .text._fseek_r
-                0x00002e24        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fseek.o)
-                0x00002e24                _fseek_r
+                0x00002e38        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fseek.o)
+                0x00002e38                _fseek_r
  .text._fseeko_r
-                0x00002e2c      0x130 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fseeko.o)
-                0x00002e2c                _fseeko_r
- .text._fwalk   0x00002f5c       0x38 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fwalk.o)
-                0x00002f5c                _fwalk
+                0x00002e40      0x130 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fseeko.o)
+                0x00002e40                _fseeko_r
+ .text._fwalk   0x00002f70       0x38 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fwalk.o)
+                0x00002f70                _fwalk
  .text._fwalk_reent
-                0x00002f94       0x42 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fwalk.o)
-                0x00002f94                _fwalk_reent
- *fill*         0x00002fd6        0x2 
+                0x00002fa8       0x42 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fwalk.o)
+                0x00002fa8                _fwalk_reent
+ *fill*         0x00002fea        0x2 
  .text.__libc_init_array
-                0x00002fd8       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-init.o)
-                0x00002fd8                __libc_init_array
+                0x00002fec       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-init.o)
+                0x00002fec                __libc_init_array
  .text.__smakebuf_r
-                0x00003024       0xa4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-makebuf.o)
-                0x00003024                __smakebuf_r
- .text.malloc   0x000030c8       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-malloc.o)
-                0x000030c8                malloc
- .text.free     0x000030dc       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-malloc.o)
-                0x000030dc                free
- .text.memchr   0x000030f0       0x16 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memchr-stub.o)
-                0x000030f0                memchr
- .text.memcpy   0x00003106       0x12 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy-stub.o)
-                0x00003106                memcpy
- .text.memset   0x00003118       0x10 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memset.o)
-                0x00003118                memset
- .text._free_r  0x00003128       0x8c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-freer.o)
-                0x00003128                _free_r
+                0x00003038       0xa4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-makebuf.o)
+                0x00003038                __smakebuf_r
+ .text.malloc   0x000030dc       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-malloc.o)
+                0x000030dc                malloc
+ .text.free     0x000030f0       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-malloc.o)
+                0x000030f0                free
+ .text.memchr   0x00003104       0x16 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memchr-stub.o)
+                0x00003104                memchr
+ .text.memcpy   0x0000311a       0x12 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000311a                memcpy
+ .text.memset   0x0000312c       0x10 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memset.o)
+                0x0000312c                memset
+ .text._free_r  0x0000313c       0x8c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-freer.o)
+                0x0000313c                _free_r
  .text._malloc_r
-                0x000031b4       0xac e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-mallocr.o)
-                0x000031b4                _malloc_r
+                0x000031c8       0xac e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-mallocr.o)
+                0x000031c8                _malloc_r
  .text.__sfputc_r
-                0x00003260       0x2a e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00003274       0x2a e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0000328a       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000328a                __sfputs_r
- *fill*         0x000032ae        0x2 
+                0x0000329e       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000329e                __sfputs_r
+ *fill*         0x000032c2        0x2 
  .text._vfprintf_r
-                0x000032b0      0x238 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x000032b0                _vfprintf_r
-                0x000032b0                _vfiprintf_r
+                0x000032c4      0x238 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000032c4                _vfprintf_r
+                0x000032c4                _vfiprintf_r
  .text.vfprintf
-                0x000034e8       0x18 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x000034e8                vfprintf
-                0x000034e8                vfiprintf
+                0x000034fc       0x18 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000034fc                vfprintf
+                0x000034fc                vfiprintf
  .text._printf_common
-                0x00003500       0xdc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00003500                _printf_common
+                0x00003514       0xdc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00003514                _printf_common
  .text._printf_i
-                0x000035dc      0x244 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x000035dc                _printf_i
+                0x000035f0      0x244 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000035f0                _printf_i
  .text._scanf_chars
-                0x00003820       0xc4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
-                0x00003820                _scanf_chars
+                0x00003834       0xc4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
+                0x00003834                _scanf_chars
  .text._scanf_i
-                0x000038e4      0x200 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
-                0x000038e4                _scanf_i
- .text._open_r  0x00003ae4       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-openr.o)
-                0x00003ae4                _open_r
- .text._putc_r  0x00003b0c       0x78 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-putc.o)
-                0x00003b0c                _putc_r
- .text.lflush   0x00003b84       0x18 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-refill.o)
+                0x000038f8      0x200 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
+                0x000038f8                _scanf_i
+ .text._open_r  0x00003af8       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-openr.o)
+                0x00003af8                _open_r
+ .text._putc_r  0x00003b20       0x78 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-putc.o)
+                0x00003b20                _putc_r
+ .text.lflush   0x00003b98       0x18 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-refill.o)
  .text.__srefill_r
-                0x00003b9c      0x120 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-refill.o)
-                0x00003b9c                __srefill_r
+                0x00003bb0      0x120 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-refill.o)
+                0x00003bb0                __srefill_r
  .text.__srget_r
-                0x00003cbc       0x60 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-rget.o)
-                0x00003cbc                __srget_r
- .text._sbrk_r  0x00003d1c       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sbrkr.o)
-                0x00003d1c                _sbrk_r
- .text.__sccl   0x00003d40       0x64 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sccl.o)
-                0x00003d40                __sccl
- .text.setbuf   0x00003da4       0x12 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-setbuf.o)
-                0x00003da4                setbuf
- *fill*         0x00003db6        0x2 
- .text.setvbuf  0x00003db8      0x10c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-setvbuf.o)
-                0x00003db8                setvbuf
- .text.sprintf  0x00003ec4       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sprintf.o)
-                0x00003ec4                siprintf
-                0x00003ec4                sprintf
- .text.sscanf   0x00003f08       0x50 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sscanf.o)
-                0x00003f08                siscanf
-                0x00003f08                sscanf
- .text.__sread  0x00003f58       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
-                0x00003f58                __sread
+                0x00003cd0       0x60 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-rget.o)
+                0x00003cd0                __srget_r
+ .text._sbrk_r  0x00003d30       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sbrkr.o)
+                0x00003d30                _sbrk_r
+ .text.__sccl   0x00003d54       0x64 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sccl.o)
+                0x00003d54                __sccl
+ .text.setbuf   0x00003db8       0x12 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-setbuf.o)
+                0x00003db8                setbuf
+ *fill*         0x00003dca        0x2 
+ .text.setvbuf  0x00003dcc      0x10c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-setvbuf.o)
+                0x00003dcc                setvbuf
+ .text.sprintf  0x00003ed8       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sprintf.o)
+                0x00003ed8                siprintf
+                0x00003ed8                sprintf
+ .text.sscanf   0x00003f1c       0x50 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sscanf.o)
+                0x00003f1c                siscanf
+                0x00003f1c                sscanf
+ .text.__sread  0x00003f6c       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
+                0x00003f6c                __sread
  .text.__seofread
-                0x00003f80        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
-                0x00003f80                __seofread
+                0x00003f94        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
+                0x00003f94                __seofread
  .text.__swrite
-                0x00003f84       0x38 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
-                0x00003f84                __swrite
- .text.__sseek  0x00003fbc       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
-                0x00003fbc                __sseek
+                0x00003f98       0x38 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
+                0x00003f98                __swrite
+ .text.__sseek  0x00003fd0       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
+                0x00003fd0                __sseek
  .text.__sclose
-                0x00003fe8        0xc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
-                0x00003fe8                __sclose
- .text          0x00003ff4       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strcmp.o)
-                0x00003ff4                strcmp
- .text          0x00004008        0xe e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strlen.o)
-                0x00004008                strlen
- .text.strncmp  0x00004016       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strncmp.o)
-                0x00004016                strncmp
- *fill*         0x0000403a        0x2 
+                0x00003ffc        0xc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
+                0x00003ffc                __sclose
+ .text          0x00004008       0x14 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strcmp.o)
+                0x00004008                strcmp
+ .text          0x0000401c        0xe e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strlen.o)
+                0x0000401c                strlen
+ .text.strncmp  0x0000402a       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strncmp.o)
+                0x0000402a                strncmp
+ *fill*         0x0000404e        0x2 
  .text._strtol_r
-                0x0000403c      0x124 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strtol.o)
-                0x0000403c                _strtol_r
+                0x00004050      0x124 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strtol.o)
+                0x00004050                _strtol_r
  .text._strtoul_r
-                0x00004160      0x108 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strtoul.o)
-                0x00004160                _strtoul_r
+                0x00004174      0x108 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strtoul.o)
+                0x00004174                _strtoul_r
  .text.__submore
-                0x00004268       0x7c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-ungetc.o)
-                0x00004268                __submore
+                0x0000427c       0x7c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-ungetc.o)
+                0x0000427c                __submore
  .text.__swbuf_r
-                0x000042e4       0xb0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-wbuf.o)
-                0x000042e4                __swbuf_r
+                0x000042f8       0xb0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-wbuf.o)
+                0x000042f8                __swbuf_r
  .text._write_r
-                0x00004394       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-writer.o)
-                0x00004394                _write_r
+                0x000043a8       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-writer.o)
+                0x000043a8                _write_r
  .text.__swsetup_r
-                0x000043bc       0xe8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-wsetup.o)
-                0x000043bc                __swsetup_r
+                0x000043d0       0xe8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-wsetup.o)
+                0x000043d0                __swsetup_r
  .text._close_r
-                0x000044a4       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-closer.o)
-                0x000044a4                _close_r
+                0x000044b8       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-closer.o)
+                0x000044b8                _close_r
  .text.__sflags
-                0x000044c8       0x74 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-flags.o)
-                0x000044c8                __sflags
+                0x000044dc       0x74 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-flags.o)
+                0x000044dc                __sflags
  .text._fstat_r
-                0x0000453c       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fstatr.o)
-                0x0000453c                _fstat_r
+                0x00004550       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fstatr.o)
+                0x00004550                _fstat_r
  .text._isatty_r
-                0x00004560       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-isattyr.o)
-                0x00004560                _isatty_r
+                0x00004574       0x24 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-isattyr.o)
+                0x00004574                _isatty_r
  .text._lseek_r
-                0x00004584       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-lseekr.o)
-                0x00004584                _lseek_r
- .text.memmove  0x000045ac       0x2a e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memmove.o)
-                0x000045ac                memmove
+                0x00004598       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-lseekr.o)
+                0x00004598                _lseek_r
+ .text.memmove  0x000045c0       0x2a e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memmove.o)
+                0x000045c0                memmove
  .text._realloc_r
-                0x000045d6       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-reallocr.o)
-                0x000045d6                _realloc_r
- *fill*         0x00004622        0x2 
+                0x000045ea       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-reallocr.o)
+                0x000045ea                _realloc_r
+ *fill*         0x00004636        0x2 
  .text.__ssputs_r
-                0x00004624       0xc4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x00004624                __ssputs_r
+                0x00004638       0xc4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x00004638                __ssputs_r
  .text._svfprintf_r
-                0x000046e8      0x1fc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x000046e8                _svfiprintf_r
-                0x000046e8                _svfprintf_r
+                0x000046fc      0x1fc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x000046fc                _svfiprintf_r
+                0x000046fc                _svfprintf_r
  .text._sungetc_r
-                0x000048e4       0x78 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
-                0x000048e4                _sungetc_r
+                0x000048f8       0x78 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
+                0x000048f8                _sungetc_r
  .text.__ssrefill_r
-                0x0000495c       0x3e e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
-                0x0000495c                __ssrefill_r
- *fill*         0x0000499a        0x2 
+                0x00004970       0x3e e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
+                0x00004970                __ssrefill_r
+ *fill*         0x000049ae        0x2 
  .text.__ssvfscanf_r
-                0x0000499c      0x2ec e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
-                0x0000499c                __ssvfiscanf_r
-                0x0000499c                __ssvfscanf_r
- .text._read_r  0x00004c88       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-readr.o)
-                0x00004c88                _read_r
+                0x000049b0      0x2ec e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
+                0x000049b0                __ssvfiscanf_r
+                0x000049b0                __ssvfscanf_r
+ .text._read_r  0x00004c9c       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-readr.o)
+                0x00004c9c                _read_r
  .text._malloc_usable_size_r
-                0x00004cb0       0x16 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-msizer.o)
-                0x00004cb0                _malloc_usable_size_r
+                0x00004cc4       0x16 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-msizer.o)
+                0x00004cc4                _malloc_usable_size_r
  *(.init)
- *fill*         0x00004cc6        0x2 
- .init          0x00004cc8        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
-                0x00004cc8                _init
- .init          0x00004ccc        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+ *fill*         0x00004cda        0x2 
+ .init          0x00004cdc        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+                0x00004cdc                _init
+ .init          0x00004ce0        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
  *(.fini)
- .fini          0x00004cd4        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
-                0x00004cd4                _fini
- .fini          0x00004cd8        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
+ .fini          0x00004ce8        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crti.o
+                0x00004ce8                _fini
+ .fini          0x00004cec        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1722,150 +1724,151 @@ LOAD E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_ga
  *(.dtors)
  *(.rodata*)
  .rodata.str1.4
-                0x00004ce0       0x85 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/board.o
- *fill*         0x00004d65        0x3 
+                0x00004cf4       0x85 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/board.o
+ *fill*         0x00004d79        0x3 
  .rodata.__stdin_name
-                0x00004d68        0x7 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00004d68                __stdin_name
- *fill*         0x00004d6f        0x1 
+                0x00004d7c        0x7 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00004d7c                __stdin_name
+ *fill*         0x00004d83        0x1 
  .rodata.__stderr_name
-                0x00004d70        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00004d70                __stderr_name
+                0x00004d84        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00004d84                __stderr_name
  .rodata.__stdout_name
-                0x00004d78        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00004d78                __stdout_name
+                0x00004d8c        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00004d8c                __stdout_name
+ *fill*         0x00004d94        0x4 
  .rodata._ZTVN4mbed10FileHandleE
-                0x00004d80       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00004d80                vtable for mbed::FileHandle
+                0x00004d98       0x2c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00004d98                vtable for mbed::FileHandle
  .rodata.str1.4
-                0x00004dac        0xe E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00004dc4        0xe E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/retarget.o
  .rodata.str1.1
-                0x00004dba       0xa6 ..\obj\main.o
+                0x00004dd2       0xa6 ..\obj\main.o
  .rodata.str1.4
-                0x00004e60      0x110 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x00004e78      0x110 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .rodata.str1.4
-                0x00004f70       0x7f E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
- *fill*         0x00004fef        0x1 
+                0x00004f88       0x7f E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
+ *fill*         0x00005007        0x1 
  .rodata._ZTVN4mbed11InterruptInE
-                0x00004ff0       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
-                0x00004ff0                vtable for mbed::InterruptIn
+                0x00005008       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(InterruptIn.o)
+                0x00005008                vtable for mbed::InterruptIn
  .rodata._ZTVN4mbed6SerialE
-                0x00005000       0x5c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
-                0x00005000                vtable for mbed::Serial
- *fill*         0x0000505c        0x4 
+                0x00005018       0x5c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Serial.o)
+                0x00005018                vtable for mbed::Serial
+ *fill*         0x00005074        0x4 
  .rodata._ZTVN4mbed10SerialBaseE
-                0x00005060       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x00005060                vtable for mbed::SerialBase
+                0x00005078       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x00005078                vtable for mbed::SerialBase
  .rodata._ZTVN4mbed6TickerE
-                0x00005070       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Ticker.o)
-                0x00005070                vtable for mbed::Ticker
- *fill*         0x00005084        0x4 
+                0x00005088       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Ticker.o)
+                0x00005088                vtable for mbed::Ticker
+ *fill*         0x0000509c        0x4 
  .rodata._ZTVN4mbed6StreamE
-                0x00005088       0x44 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
-                0x00005088                vtable for mbed::Stream
+                0x000050a0       0x44 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x000050a0                vtable for mbed::Stream
  .rodata.str1.4
-                0x000050cc        0x3 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
+                0x000050e4        0x3 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(Stream.o)
                                   0x7 (size before relaxing)
- *fill*         0x000050cf        0x1 
+ *fill*         0x000050e7        0x1 
  .rodata.str1.4
-                0x000050d0       0x31 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
- *fill*         0x00005101        0x7 
+                0x000050e8       0x31 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
+ *fill*         0x00005119        0x7 
  .rodata._ZTVN4mbed10TimerEventE
-                0x00005108       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
-                0x00005108                vtable for mbed::TimerEvent
+                0x00005120       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(TimerEvent.o)
+                0x00005120                vtable for mbed::TimerEvent
  .rodata.str1.4
-                0x0000511c       0x85 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
+                0x00005134       0x85 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
  .rodata.str1.4
-                0x0000511c       0x66 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
- *fill*         0x00005182        0x2 
+                0x00005134       0x66 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
+ *fill*         0x0000519a        0x2 
  .rodata.us_interface
-                0x00005184       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x0000519c       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
  .rodata.us_data
-                0x00005198        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x000051b0        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
  .rodata.PinMap_UART_RX
-                0x000051a0       0x6c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
-                0x000051a0                PinMap_UART_RX
+                0x000051b8       0x6c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
+                0x000051b8                PinMap_UART_RX
  .rodata.PinMap_UART_TX
-                0x0000520c       0x6c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
-                0x0000520c                PinMap_UART_TX
+                0x00005224       0x6c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
+                0x00005224                PinMap_UART_TX
  .rodata.search_bits
-                0x00005278       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
-                0x00005278                search_bits
+                0x00005290       0x14 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x00005290                search_bits
  .rodata.str1.4
-                0x0000528c       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x000052a4       0x28 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
  .rodata.str1.4
-                0x000052b4       0x70 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x000052cc       0x70 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
                                  0x9c (size before relaxing)
- *fill*         0x00005324        0x4 
+ *fill*         0x0000533c        0x4 
  .rodata._ZTVN4mbed8FileBaseE
-                0x00005328       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
-                0x00005328                vtable for mbed::FileBase
+                0x00005340       0x10 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
+                0x00005340                vtable for mbed::FileBase
  .rodata._ZTVN4mbed8FileLikeE
-                0x00005338       0x3c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileLike.o)
-                0x00005338                vtable for mbed::FileLike
+                0x00005350       0x3c E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileLike.o)
+                0x00005350                vtable for mbed::FileLike
  .rodata.__sf_fake_stdin
-                0x00005374       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x00005374                __sf_fake_stdin
+                0x0000538c       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x0000538c                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x00005394       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x00005394                __sf_fake_stdout
+                0x000053ac       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x000053ac                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x000053b4       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
-                0x000053b4                __sf_fake_stderr
+                0x000053cc       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+                0x000053cc                __sf_fake_stderr
  .rodata.str1.1
-                0x000053d4       0xa6 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-impure.o)
+                0x000053ec       0xa6 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-impure.o)
                                   0x2 (size before relaxing)
  .rodata._global_impure_ptr
-                0x000053d4        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-impure.o)
-                0x000053d4                _global_impure_ptr
+                0x000053ec        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-impure.o)
+                0x000053ec                _global_impure_ptr
  .rodata.str1.1
-                0x000053d8       0x11 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000053f0       0x11 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata.str1.1
-                0x000053e9       0x22 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x0000540b        0x1 
- .rodata        0x0000540c        0xc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
+                0x00005401       0x22 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x00005423        0x1 
+ .rodata        0x00005424        0xc e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
  .rodata.str1.1
-                0x00005418       0x1b e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
+                0x00005430       0x1b e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
  .rodata._ctype_
-                0x00005433      0x101 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-ctype_.o)
-                0x00005433                _ctype_
+                0x0000544b      0x101 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-ctype_.o)
+                0x0000544b                _ctype_
  .rodata.str1.1
-                0x00005534       0x11 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x0000554c       0x11 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata.str1.1
-                0x00005534        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
+                0x0000554c        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
  *(.eh_frame*)
- .eh_frame      0x00005534        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
- .eh_frame      0x00005534        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
+ .eh_frame      0x0000554c        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+ .eh_frame      0x0000554c        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
 
-.glue_7         0x00005538        0x0
- .glue_7        0x00005538        0x0 linker stubs
+.glue_7         0x00005550        0x0
+ .glue_7        0x00005550        0x0 linker stubs
 
-.glue_7t        0x00005538        0x0
- .glue_7t       0x00005538        0x0 linker stubs
+.glue_7t        0x00005550        0x0
+ .glue_7t       0x00005550        0x0 linker stubs
 
-.vfp11_veneer   0x00005538        0x0
- .vfp11_veneer  0x00005538        0x0 linker stubs
+.vfp11_veneer   0x00005550        0x0
+ .vfp11_veneer  0x00005550        0x0 linker stubs
 
-.v4_bx          0x00005538        0x0
- .v4_bx         0x00005538        0x0 linker stubs
+.v4_bx          0x00005550        0x0
+ .v4_bx         0x00005550        0x0 linker stubs
 
-.iplt           0x00005538        0x0
- .iplt          0x00005538        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+.iplt           0x00005550        0x0
+ .iplt          0x00005550        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00005538                __exidx_start = .
+                0x00005550                __exidx_start = .
 
-.ARM.exidx      0x00005538        0x8
+.ARM.exidx      0x00005550        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x00005538        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
-                0x00005540                __exidx_end = .
-                0x00005540                __etext = .
+ .ARM.exidx     0x00005550        0x8 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+                0x00005558                __exidx_end = .
+                0x00005558                __etext = .
 
-.rel.dyn        0x00005540        0x0
- .rel.iplt      0x00005540        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
+.rel.dyn        0x00005558        0x0
+ .rel.iplt      0x00005558        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
 
-.data           0x1ffff0c0       0x84 load address 0x00005540
+.data           0x1ffff0c0       0x84 load address 0x00005558
                 0x1ffff0c0                __data_start__ = .
  *(vtable)
  *(.data*)
@@ -1906,20 +1909,20 @@ LOAD E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_ga
                 0x1ffff144                . = ALIGN (0x4)
                 0x1ffff144                __data_end__ = .
 
-.jcr            0x1ffff144        0x0 load address 0x000055c4
+.jcr            0x1ffff144        0x0 load address 0x000055dc
  .jcr           0x1ffff144        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
 
 .tm_clone_table
-                0x1ffff144        0x0 load address 0x000055c4
+                0x1ffff144        0x0 load address 0x000055dc
  .tm_clone_table
                 0x1ffff144        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
  .tm_clone_table
                 0x1ffff144        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtend.o
 
-.igot.plt       0x1ffff144        0x0 load address 0x000055c4
+.igot.plt       0x1ffff144        0x0 load address 0x000055dc
  .igot.plt      0x1ffff144        0x0 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
 
-.bss            0x1ffff144      0x500 load address 0x000055c4
+.bss            0x1ffff144      0x530 load address 0x000055dc
                 0x1ffff144                __bss_start__ = .
  *(.bss*)
  .bss           0x1ffff144       0x1c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m/crtbegin.o
@@ -1954,83 +1957,86 @@ LOAD E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_ga
  *fill*         0x1ffff395        0x3 
  .bss.sw_led1   0x1ffff398       0x18 ..\obj\main.o
                 0x1ffff398                sw_led1
- .bss.uart      0x1ffff3b0       0x58 ..\obj\main.o
-                0x1ffff3b0                uart
- .bss.sBuffIndex
-                0x1ffff408        0x1 ..\obj\main.o
-                0x1ffff408                sBuffIndex
- *fill*         0x1ffff409        0x3 
+ .bss.autoSendTimer
+                0x1ffff3b0       0x30 ..\obj\main.o
+                0x1ffff3b0                autoSendTimer
+ .bss.uart      0x1ffff3e0       0x58 ..\obj\main.o
+                0x1ffff3e0                uart
  .bss.AlertTimer
-                0x1ffff40c       0x30 ..\obj\main.o
-                0x1ffff40c                AlertTimer
+                0x1ffff438       0x30 ..\obj\main.o
+                0x1ffff438                AlertTimer
  .bss.buzzer_state
-                0x1ffff43c        0x1 ..\obj\main.o
-                0x1ffff43c                buzzer_state
- .bss.alert     0x1ffff43d        0x1 ..\obj\main.o
-                0x1ffff43d                alert
+                0x1ffff468        0x1 ..\obj\main.o
+                0x1ffff468                buzzer_state
+ .bss.alert     0x1ffff469        0x1 ..\obj\main.o
+                0x1ffff469                alert
  .bss.receiveBuff
-                0x1ffff43e       0x32 ..\obj\main.o
-                0x1ffff43e                receiveBuff
+                0x1ffff46a       0x32 ..\obj\main.o
+                0x1ffff46a                receiveBuff
  .bss.receiveComplete
-                0x1ffff470        0x1 ..\obj\main.o
-                0x1ffff470                receiveComplete
- *fill*         0x1ffff471        0x3 
- .bss.myled     0x1ffff474       0x18 ..\obj\main.o
-                0x1ffff474                myled
- .bss.buz       0x1ffff48c       0x18 ..\obj\main.o
-                0x1ffff48c                buz
+                0x1ffff49c        0x1 ..\obj\main.o
+                0x1ffff49c                receiveComplete
+ *fill*         0x1ffff49d        0x3 
+ .bss.myled     0x1ffff4a0       0x18 ..\obj\main.o
+                0x1ffff4a0                myled
+ .bss.buz       0x1ffff4b8       0x18 ..\obj\main.o
+                0x1ffff4b8                buz
  .bss.rBuffIndex
-                0x1ffff4a4        0x1 ..\obj\main.o
-                0x1ffff4a4                rBuffIndex
- *fill*         0x1ffff4a5        0x3 
- .bss.sw1       0x1ffff4a8       0x58 ..\obj\main.o
-                0x1ffff4a8                sw1
+                0x1ffff4d0        0x1 ..\obj\main.o
+                0x1ffff4d0                rBuffIndex
+ *fill*         0x1ffff4d1        0x3 
+ .bss.sw1       0x1ffff4d4       0x58 ..\obj\main.o
+                0x1ffff4d4                sw1
+ .bss.sBuffIndex
+                0x1ffff52c        0x1 ..\obj\main.o
+                0x1ffff52c                sBuffIndex
+ *fill*         0x1ffff52d        0x3 
  .bss.stdio_uart_inited
-                0x1ffff500        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x1ffff500                stdio_uart_inited
+                0x1ffff530        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x1ffff530                stdio_uart_inited
  .bss.serial_irq_ids
-                0x1ffff504        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x1ffff534        0xc E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .bss.irq_handler
-                0x1ffff510        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
- .bss.events    0x1ffff514        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x1ffff540        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+ .bss.events    0x1ffff544        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
  .bss.irq_handler
-                0x1ffff51c        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x1ffff54c        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
  .bss.channel_ids
-                0x1ffff520      0x100 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
+                0x1ffff550      0x100 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_irq_api.o)
  .bss.us_ticker_int_counter
-                0x1ffff620        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x1ffff650        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
  .bss.us_ticker_inited
-                0x1ffff624        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x1ffff654        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
  .bss.us_ticker_int_remainder
-                0x1ffff628        0x2 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
- *fill*         0x1ffff62a        0x2 
+                0x1ffff658        0x2 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+ *fill*         0x1ffff65a        0x2 
  .bss._ZN4mbed8FileBase5_headE
-                0x1ffff62c        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
-                0x1ffff62c                mbed::FileBase::_head
+                0x1ffff65c        0x4 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
+                0x1ffff65c                mbed::FileBase::_head
  .bss.__malloc_sbrk_start
-                0x1ffff630        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-mallocr.o)
-                0x1ffff630                __malloc_sbrk_start
+                0x1ffff660        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-mallocr.o)
+                0x1ffff660                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x1ffff634        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-mallocr.o)
-                0x1ffff634                __malloc_free_list
+                0x1ffff664        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-mallocr.o)
+                0x1ffff664                __malloc_free_list
  *(COMMON)
- COMMON         0x1ffff638        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x1ffff638                stdio_uart
- COMMON         0x1ffff640        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-reent.o)
-                0x1ffff640                errno
-                0x1ffff644                __bss_end__ = .
+ COMMON         0x1ffff668        0x8 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x1ffff668                stdio_uart
+ COMMON         0x1ffff670        0x4 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-reent.o)
+                0x1ffff670                errno
+                0x1ffff674                __bss_end__ = .
 
-.heap           0x1ffff648       0x80
-                0x1ffff648                __end__ = .
-                0x1ffff648                end = __end__
+.heap           0x1ffff678       0x80
+                0x1ffff678                __end__ = .
+                0x1ffff678                end = __end__
  *(.heap*)
- .heap          0x1ffff648       0x80 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/startup_MKL25Z4.o
-                0x1ffff648                __HeapBase
-                0x1ffff6c8                __HeapLimit = .
+ .heap          0x1ffff678       0x80 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/startup_MKL25Z4.o
+                0x1ffff678                __HeapBase
+                0x1ffff6f8                __HeapLimit = .
 
-.stack_dummy    0x1ffff648       0x80
+.stack_dummy    0x1ffff678       0x80
  *(.stack)
- .stack         0x1ffff648       0x80 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/startup_MKL25Z4.o
+ .stack         0x1ffff678       0x80 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM/startup_MKL25Z4.o
                 0x20003000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20002f80                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
                 0x20003000                PROVIDE (__stack, __StackTop)
@@ -2290,88 +2296,88 @@ OUTPUT(frdm_im920c_gaweway.elf elf32-littlearm)
  .comment       0x000000de       0x71 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileBase.o)
  .comment       0x000000de       0x71 E:\CoIdeWork\GIT\TrapChecker\frdm_im920c_gaweway_coide_kl25z\frdm_im920c_gaweway/mbed/TARGET_KL25Z/TOOLCHAIN_GCC_ARM\libmbed.a(FileLike.o)
 
-.debug_info     0x00000000     0x3630
- .debug_info    0x00000000     0x3630 ..\obj\main.o
+.debug_info     0x00000000     0x3906
+ .debug_info    0x00000000     0x3906 ..\obj\main.o
 
-.debug_abbrev   0x00000000      0x5f4
- .debug_abbrev  0x00000000      0x5f4 ..\obj\main.o
+.debug_abbrev   0x00000000      0x605
+ .debug_abbrev  0x00000000      0x605 ..\obj\main.o
 
-.debug_loc      0x00000000      0x737
- .debug_loc     0x00000000      0x737 ..\obj\main.o
+.debug_loc      0x00000000      0x7df
+ .debug_loc     0x00000000      0x7df ..\obj\main.o
 
-.debug_aranges  0x00000000       0xf8
+.debug_aranges  0x00000000      0x100
  .debug_aranges
-                0x00000000       0xf8 ..\obj\main.o
+                0x00000000      0x100 ..\obj\main.o
 
-.debug_ranges   0x00000000      0x258
- .debug_ranges  0x00000000      0x258 ..\obj\main.o
+.debug_ranges   0x00000000      0x2a0
+ .debug_ranges  0x00000000      0x2a0 ..\obj\main.o
 
-.debug_line     0x00000000      0xa8e
- .debug_line    0x00000000      0xa8e ..\obj\main.o
+.debug_line     0x00000000      0xafd
+ .debug_line    0x00000000      0xafd ..\obj\main.o
 
-.debug_str      0x00000000     0x1589
- .debug_str     0x00000000     0x1589 ..\obj\main.o
-                               0x16e6 (size before relaxing)
+.debug_str      0x00000000     0x15ad
+ .debug_str     0x00000000     0x15ad ..\obj\main.o
+                               0x170a (size before relaxing)
 
-.debug_frame    0x00000000     0x1170
- .debug_frame   0x00000000      0x2d0 ..\obj\main.o
- .debug_frame   0x000002d0       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libstdc++_nano.a(atexit_arm.o)
- .debug_frame   0x000002f8       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libstdc++_nano.a(del_op.o)
- .debug_frame   0x00000320       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m\libgcc.a(_udivsi3.o)
- .debug_frame   0x00000340       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-cxa_atexit.o)
- .debug_frame   0x0000036c       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-errno.o)
- .debug_frame   0x0000038c       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-exit.o)
- .debug_frame   0x000003b4       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fclose.o)
- .debug_frame   0x000003f8       0x68 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fflush.o)
- .debug_frame   0x00000460       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fgetc.o)
- .debug_frame   0x000004a4      0x140 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x000005e4       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fopen.o)
- .debug_frame   0x00000630       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fputc.o)
- .debug_frame   0x00000674       0x40 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fseek.o)
- .debug_frame   0x000006b4       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fseeko.o)
- .debug_frame   0x00000700       0x58 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fwalk.o)
- .debug_frame   0x00000758       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-init.o)
- .debug_frame   0x00000784       0x30 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-makebuf.o)
- .debug_frame   0x000007b4       0x40 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-malloc.o)
- .debug_frame   0x000007f4       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memchr-stub.o)
- .debug_frame   0x00000814       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000083c       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x0000085c       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00000888       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x000008b4       0x9c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x00000950       0x54 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x000009a4       0x54 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
- .debug_frame   0x000009f8       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-openr.o)
- .debug_frame   0x00000a24       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-putc.o)
- .debug_frame   0x00000a68       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-reent.o)
- .debug_frame   0x00000ab0       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-refill.o)
- .debug_frame   0x00000af8       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-rget.o)
- .debug_frame   0x00000b3c       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00000b68       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sccl.o)
- .debug_frame   0x00000b94       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-setbuf.o)
- .debug_frame   0x00000bbc       0x34 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-setvbuf.o)
- .debug_frame   0x00000bf0       0x50 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sprintf.o)
- .debug_frame   0x00000c40       0x58 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sscanf.o)
- .debug_frame   0x00000c98       0x90 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
- .debug_frame   0x00000d28       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strcmp.o)
- .debug_frame   0x00000d48       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strncmp.o)
- .debug_frame   0x00000d74       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strtol.o)
- .debug_frame   0x00000dbc       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strtoul.o)
- .debug_frame   0x00000e04       0x6c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-ungetc.o)
- .debug_frame   0x00000e70       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-wbuf.o)
- .debug_frame   0x00000eb8       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-writer.o)
- .debug_frame   0x00000ee4       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-wsetup.o)
- .debug_frame   0x00000f10       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-closer.o)
- .debug_frame   0x00000f3c       0x30 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-flags.o)
- .debug_frame   0x00000f6c       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fstatr.o)
- .debug_frame   0x00000f98       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-isattyr.o)
- .debug_frame   0x00000fc4       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-lseekr.o)
- .debug_frame   0x00000ff0       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memmove.o)
- .debug_frame   0x00001018       0x30 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x00001048       0x74 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x000010bc       0x68 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
- .debug_frame   0x00001124       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-readr.o)
- .debug_frame   0x00001150       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-msizer.o)
+.debug_frame    0x00000000     0x118c
+ .debug_frame   0x00000000      0x2ec ..\obj\main.o
+ .debug_frame   0x000002ec       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libstdc++_nano.a(atexit_arm.o)
+ .debug_frame   0x00000314       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libstdc++_nano.a(del_op.o)
+ .debug_frame   0x0000033c       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000035c       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x00000388       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-errno.o)
+ .debug_frame   0x000003a8       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x000003d0       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fclose.o)
+ .debug_frame   0x00000414       0x68 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000047c       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fgetc.o)
+ .debug_frame   0x000004c0      0x140 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00000600       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fopen.o)
+ .debug_frame   0x0000064c       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fputc.o)
+ .debug_frame   0x00000690       0x40 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fseek.o)
+ .debug_frame   0x000006d0       0x4c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fseeko.o)
+ .debug_frame   0x0000071c       0x58 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00000774       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x000007a0       0x30 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x000007d0       0x40 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00000810       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x00000830       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000858       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000878       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x000008a4       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x000008d0       0x9c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x0000096c       0x54 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x000009c0       0x54 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-vfscanf_i.o)
+ .debug_frame   0x00000a14       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-openr.o)
+ .debug_frame   0x00000a40       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-putc.o)
+ .debug_frame   0x00000a84       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x00000acc       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-refill.o)
+ .debug_frame   0x00000b14       0x44 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-rget.o)
+ .debug_frame   0x00000b58       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000b84       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sccl.o)
+ .debug_frame   0x00000bb0       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-setbuf.o)
+ .debug_frame   0x00000bd8       0x34 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-setvbuf.o)
+ .debug_frame   0x00000c0c       0x50 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x00000c5c       0x58 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-sscanf.o)
+ .debug_frame   0x00000cb4       0x90 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00000d44       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strcmp.o)
+ .debug_frame   0x00000d64       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strncmp.o)
+ .debug_frame   0x00000d90       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strtol.o)
+ .debug_frame   0x00000dd8       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-strtoul.o)
+ .debug_frame   0x00000e20       0x6c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-ungetc.o)
+ .debug_frame   0x00000e8c       0x48 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00000ed4       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x00000f00       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00000f2c       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x00000f58       0x30 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-flags.o)
+ .debug_frame   0x00000f88       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00000fb4       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x00000fe0       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x0000100c       0x28 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00001034       0x30 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00001064       0x74 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x000010d8       0x68 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-svfscanf.o)
+ .debug_frame   0x00001140       0x2c e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x0000116c       0x20 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a(lib_a-nano-msizer.o)
 
 .stabstr        0x00000000       0x76
  .stabstr       0x00000000       0x76 e:/programfiles_x86/gnu tools arm embedded/5.2 2015q4/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(getpid.o)

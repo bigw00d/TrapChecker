@@ -2,6 +2,8 @@
 
 #define MYDEBUG
 
+#define DEV_NO '1'
+
 #define COMPLETE 1
 #define INCOMPLETE 0
 #define END_OF_PACKET '\n'
@@ -21,6 +23,7 @@ Serial pc(USBTX, USBRX);
 Serial uart(PTE0, PTE1);  // tx, rx
 InterruptIn sw(PTA13);
 DigitalIn level_sw(PTA13);
+
 
 uint8_t  receiveSize=0;
 uint8_t  sendSize=0;
@@ -53,19 +56,19 @@ void AutoSend() {
         uart.putc('d');  
         uart.putc('t');  
         uart.putc(' ');  
-        uart.putc('0');  //src :0D85
-        uart.putc('D'); 
-        uart.putc('8'); 
-        uart.putc('5'); 
+        uart.putc('0');  //src :000* *:device number
+        uart.putc('0'); 
+        uart.putc('0'); 
+        uart.putc(DEV_NO); 
         uart.putc('0');  //type :00 
         uart.putc('0'); 
-        uart.putc('5');  //dst :5176
+        uart.putc('0');  //dst :0010
+        uart.putc('0'); 
         uart.putc('1'); 
-        uart.putc('7'); 
-        uart.putc('6'); 
+        uart.putc('0'); 
         uart.putc('\r');  
         uart.putc('\n');
-
+        
     }
 
     autoSendTimer.attach(AutoSend, AUTO_SEND_SEC);
@@ -80,23 +83,24 @@ void periodicCallback() {
             
             //send alert
             disconCnt = 0;
+
             uart.putc('t');
             uart.putc('x');  
             uart.putc('d');  
             uart.putc('t');  
             uart.putc(' ');  
-            uart.putc('0');  //src :0D85
-            uart.putc('D'); 
-            uart.putc('8'); 
-            uart.putc('5'); 
+            uart.putc('0');  //src :000* *:device number
+            uart.putc('0'); 
+            uart.putc('0'); 
+            uart.putc(DEV_NO); 
             uart.putc('0');  //type :00 
             uart.putc('0'); 
-            uart.putc('5');  //dst :5176
+            uart.putc('0');  //dst :0010
+            uart.putc('0'); 
             uart.putc('1'); 
-            uart.putc('7'); 
-            uart.putc('6'); 
+            uart.putc('0'); 
             uart.putc('\r');  
-            uart.putc('\n');  
+            uart.putc('\n');
 
             //end check
             checkCnt = 0;
@@ -196,7 +200,7 @@ int main()
 
     autoSendCnt = 0;
     autoSendTiming = 1;
-    autoSendTimer.attach(AutoSend, FIRST_AUTO_SEND_SEC);
+    autoSendTimer.attach(AutoSend, FIRST_AUTO_SEND_SEC); //test
 
     while (true) {
         sleep(); //wait for interrupt
@@ -204,7 +208,7 @@ int main()
         if(receiveComplete == COMPLETE) {
 #ifdef MYDEBUG
             pc.putc('R'); 
-            pc.putc('V'); 
+            pc.putc('v');
             pc.putc(':'); 
             for(rBuffIndex=0; rBuffIndex<receiveSize; ++rBuffIndex) {
                 pc.putc(receiveBuff[rBuffIndex]);       // 送信

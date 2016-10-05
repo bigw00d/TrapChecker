@@ -190,6 +190,33 @@ void stopAlert2()
     }
 }
 
+Ticker autoSendTimer;
+#define AUTO_SEND_SEC (3.0) //3s
+void AutoSend() { 
+    autoSendTimer.detach();
+
+    //send alert
+    uart.putc('t');
+    uart.putc('x');  
+    uart.putc('d');  
+    uart.putc('t');  
+    uart.putc(' ');  
+    uart.putc('0');  //src :0E44
+    uart.putc('E'); 
+    uart.putc('4'); 
+    uart.putc('4'); 
+    uart.putc('9');  //type :99
+    uart.putc('9'); 
+    uart.putc('5');  //dst :5176
+    uart.putc('1'); 
+    uart.putc('7'); 
+    uart.putc('6'); 
+    uart.putc('\r');  
+    uart.putc('\n');
+
+    autoSendTimer.attach(AutoSend, AUTO_SEND_SEC);
+}
+
 int main()
 {
     receiveSize=0;
@@ -219,6 +246,8 @@ int main()
     pc.attach(pcCB , Serial::RxIrq);
 #endif
 
+    // autoSendTimer.attach(AutoSend, AUTO_SEND_SEC);
+
     while (true) {
         sleep(); //wait for interrupt
 
@@ -234,7 +263,7 @@ int main()
         }
         if(receiveComplete == COMPLETE) {
 #ifdef MYDEBUG
-            pc.putc('R'); 
+            pc.putc('r');
             pc.putc('V'); 
             pc.putc(':'); 
             for(rBuffIndex=0; rBuffIndex<receiveSize; ++rBuffIndex) {
@@ -265,12 +294,11 @@ int main()
                     uart.putc('\n');  
                 }
                 else if(  //case:check conection
-                        (receiveBuff[17] == '0') &&
+                        (receiveBuff[17] == '0') && // ****03010* ex.0010030101
                         (receiveBuff[18] == '3') &&
                         (receiveBuff[20] == '0') &&
-                        (receiveBuff[21] == 'E') &&
-                        (receiveBuff[23] == '4') &&
-                        (receiveBuff[24] == '4')
+                        (receiveBuff[21] == '1') &&
+                        (receiveBuff[23] == '0')
                 ) {
                     uart.putc('t'); //send reverse src & dst data
                     uart.putc('x');  

@@ -9,7 +9,7 @@
         <Option name="UserEditCompiler" value="-fno-common; -fmessage-length=0; -Wall; -fno-strict-aliasing; -fno-rtti; -fno-exceptions; -ffunction-sections; -fdata-sections; -std=gnu++98"/>
         <Includepaths>
           <Includepath path="."/>
-          <Includepath path="mbed"/>
+          <Includepath path="mbed/."/>
           <Includepath path="mbed/TARGET_KL25Z"/>
           <Includepath path="mbed/TARGET_KL25Z/TARGET_Freescale"/>
           <Includepath path="mbed/TARGET_KL25Z/TARGET_Freescale/TARGET_KLXX"/>
@@ -24,7 +24,7 @@
           <Define name="TARGET_Freescale"/>
           <Define name="DEVICE_PORTINOUT=1"/>
           <Define name="__MBED_CMSIS_RTOS_CM"/>
-          <Define name="MBED_BUILD_TIMESTAMP=1473242638.51"/>
+          <Define name="MBED_BUILD_TIMESTAMP=1475639130.32"/>
           <Define name="TOOLCHAIN_object"/>
           <Define name="__CMSIS_RTOS"/>
           <Define name="TARGET_KLXX"/>
@@ -32,7 +32,7 @@
           <Define name="TARGET_M0P"/>
           <Define name="DEVICE_ANALOGOUT=1"/>
           <Define name="TARGET_UVISOR_UNSUPPORTED"/>
-          <Define name="DEVICE_PWMOUT=1"/>
+          <Define name="DEVICE_SERIAL=1"/>
           <Define name="DEVICE_INTERRUPTIN=1"/>
           <Define name="DEVICE_I2C=1"/>
           <Define name="DEVICE_PORTOUT=1"/>
@@ -49,7 +49,7 @@
           <Define name="DEVICE_ERROR_RED=1"/>
           <Define name="DEVICE_SPISLAVE=1"/>
           <Define name="DEVICE_ANALOGIN=1"/>
-          <Define name="DEVICE_SERIAL=1"/>
+          <Define name="DEVICE_PWMOUT=1"/>
           <Define name="DEVICE_SEMIHOST=1"/>
           <Define name="TARGET_LIKE_CORTEX_M0"/>
         </DefinedSymbols>
@@ -138,8 +138,8 @@
     <File name="headers/mbed/mbed_assert.h" path="mbed/mbed_assert.h" type="1"/>
     <File name="headers/mbed/TARGET_KL25Z/core_cm4_simd.h" path="mbed/TARGET_KL25Z/core_cm4_simd.h" type="1"/>
     <File name="headers/mbed/PwmOut.h" path="mbed/PwmOut.h" type="1"/>
-    <File name="headers/mbed/Ethernet.h" path="mbed/Ethernet.h" type="1"/>
     <File name="headers/mbed/TARGET_KL25Z/core_cmSimd.h" path="mbed/TARGET_KL25Z/core_cmSimd.h" type="1"/>
+    <File name="headers/mbed/Ethernet.h" path="mbed/Ethernet.h" type="1"/>
     <File name="headers/mbed/FileSystemLike.h" path="mbed/FileSystemLike.h" type="1"/>
     <File name="headers/mbed/I2C.h" path="mbed/I2C.h" type="1"/>
     <File name="headers/mbed/TARGET_KL25Z/core_cm3.h" path="mbed/TARGET_KL25Z/core_cm3.h" type="1"/>
@@ -169,6 +169,7 @@
     <File name="headers/mbed" path="" type="2"/>
     <File name="headers/mbed/DigitalInOut.h" path="mbed/DigitalInOut.h" type="1"/>
     <File name="headers/mbed/BusInOut.h" path="mbed/BusInOut.h" type="1"/>
+    <File name="headers/mbed_config.h" path="mbed_config.h" type="1"/>
     <File name="headers/mbed/TARGET_KL25Z/core_cmFunc.h" path="mbed/TARGET_KL25Z/core_cmFunc.h" type="1"/>
     <File name="headers/mbed/FunctionPointer.h" path="mbed/FunctionPointer.h" type="1"/>
     <File name="headers/mbed/BusOut.h" path="mbed/BusOut.h" type="1"/>
